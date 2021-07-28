@@ -11,12 +11,12 @@ $(function(){
         $.getJSON("drugdata.json",display);
 });
 function display(drugdata){
-    $("#p0_name").html("drugdata[0].name");
-    $("#p0_age").html("drugdata[0].age");
-    $("#p1_name").html("drugdata[1].name");
-    $("#p1_age").html("drugdata[1].age");
-    $("#p2_name").html("drugdata[2].name");
-    $("#p2_age").html("drugdata[2].age");
+    $("#p0_name").html(drugdata[0].name);
+    $("#p0_age").html(drugdata[0].age);
+    $("#p1_name").html(drugdata[1].name);
+    $("#p1_age").html(drugdata[1].age);
+    $("#p2_name").html(drugdata[2].name);
+    $("#p2_age").html(drugdata[2].age);
 };
 //テーブル作成
 
@@ -42,7 +42,7 @@ function gopatient2(){
         <th>名前</th><th>年齢</th><th>与薬情報</th>
     </tr>
     <tr>
-        <td><div id="p0_name"></div></td><td id="p0_age"></td><td><button type="button" onclick="gopatient0()">情報を閲覧する</button></td>
+        <td id="p0_name"></td><td id="p0_age"></td><td><button type="button" onclick="gopatient0()">情報を閲覧する</button></td>
     </tr>
     <tr>
         <td id="p1_name"></td><td id="p1_age"></td><td><button type="button" onclick="gopatient1()">情報を閲覧する</button></td>
