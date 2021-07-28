@@ -8,9 +8,7 @@
 <script type="text/javascript">
 //テーブル作成
 $(function(){
-    $("#display").click(function(){
         $.getJSON("drugdata.json",display);
-    });
 });
 function display(drugdata){
     $("#p0_name").html("drugdata[0].name");
@@ -53,6 +51,5 @@ function gopatient2(){
         <td id="p2_name"></td><td id="p2_age"></td><td><button type="button" onclick="gopatient2()">情報を閲覧する</button></td>
     </tr>
 </table>
-<button type="button" id="display">最新の情報を取得</button>
 </body>
 </html>
