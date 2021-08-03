@@ -11,12 +11,11 @@
         });
         function display(drugdata){
             $("#p0_name").html(drugdata[0].name);
-            $("#p0morning_dn").html(
-                drugdata[0].morning.drugname[0]+"<br>"+
-                drugdata[0].morning.drugname[1]+"<br>"+
-                drugdata[0].morning.drugname[2]+"<br>"+
-                drugdata[0].morning.drugname[3]+"<br>"+
-                drugdata[0].morning.drugname[4])
+            $("#p0morning_dn0").html(drugdata[0].morning.drugname[0])
+            $("#p0morning_dn1").html(drugdata[0].morning.drugname[1])
+            $("#p0morning_dn2").html(drugdata[0].morning.drugname[2])
+            $("#p0morning_dn3").html(drugdata[0].morning.drugname[3])
+            $("#p0morning_dn4").html(drugdata[0].morning.drugname[4])
             $("#p0morning_p").html(
                 drugdata[0].morning.drugname[0]+"："+drugdata[0].morning.purpose[0]+"<br>"+
                 drugdata[0].morning.drugname[1]+"："+drugdata[0].morning.purpose[1]+"<br>"+
@@ -40,14 +39,11 @@
             <td>処方薬</td><td>用量</td>
         </tr>
         <tr>
-            <td id="p0morning_dn"></td>
-            <td>
-                <input type="text" id="dd0" placeholder="用量を入力してください" inputmode="numeric" pattern="\d"><br>
-                <input type="text" id="dd1" placeholder="用量を入力してください" inputmode="numeric" pattern="\d"><br>
-                <input type="text" id="dd2" placeholder="用量を入力してください" inputmode="numeric" pattern="\d"><br>
-                <input type="text" id="dd3" placeholder="用量を入力してください" inputmode="numeric" pattern="\d"><br>
-                <input type="text" id="dd4" placeholder="用量を入力してください" inputmode="numeric" pattern="\d">
-            </td>
+            <td id="p0morning_dn0"></td><td><input type="text" id="dd0" placeholder="用量を入力してください" inputmode="numeric" pattern="\d"></td>
+            <td id="p0morning_dn1"></td><td><input type="text" id="dd1" placeholder="用量を入力してください" inputmode="numeric" pattern="\d"></td>
+            <td id="p0morning_dn2"></td><td><input type="text" id="dd2" placeholder="用量を入力してください" inputmode="numeric" pattern="\d"></td>
+            <td id="p0morning_dn3"></td><td><input type="text" id="dd3" placeholder="用量を入力してください" inputmode="numeric" pattern="\d"></td>
+            <td id="p0morning_dn4"></td><td><input type="text" id="dd4" placeholder="用量を入力してください" inputmode="numeric" pattern="\d"></td>
         </tr>
         <tr>
             <td colspan="2">使用目的</td>
