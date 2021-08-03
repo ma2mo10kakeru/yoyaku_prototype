@@ -17,6 +17,10 @@ function display(drugdata){
     $("#p1_age").html(drugdata[1].age);
     $("#p2_name").html(drugdata[2].name);
     $("#p2_age").html(drugdata[2].age);
+    $("#p3_name").html(drugdata[3].name);
+    $("#p3_age").html(drugdata[3].age);
+    $("#p4_name").html(drugdata[4].name);
+    $("#p4_age").html(drugdata[4].age);
 };
 //テーブル作成
 
@@ -29,6 +33,12 @@ function gopatient1(){
 }
 function gopatient2(){
     location.href="patient2.html";
+}
+function gopatient3(){
+    location.href="patient3.html";
+}
+function gopatient4(){
+    location.href="patient4.html";
 }
 //画面遷移
 </script>
@@ -49,6 +59,12 @@ function gopatient2(){
     </tr>
     <tr>
         <td id="p2_name"></td><td id="p2_age"></td><td><button type="button" onclick="gopatient2()">情報を閲覧する</button></td>
+    </tr>
+    <tr>
+        <td id="p3_name"></td><td id="p3_age"></td><td><button type="button" onclick="gopatient3()">情報を閲覧する</button></td>
+    </tr>
+    <tr>
+        <td id="p4_name"></td><td id="p4_age"></td><td><button type="button" onclick="gopatient4()">情報を閲覧する</button></td>
     </tr>
 </table>
 </body>
