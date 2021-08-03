@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <title>patient0</title>
+
+    <script type="text/javascript">
+    function p0_morning(){
+        location.href="p0_morning.html"
+    };
+    function p0_noon(){
+        location.href="p0_noon.html"
+    };
+    function p0_night(){
+        location.href="p0_night.html"
+    };
+    </script>
 </head>
 <body>
-    patient0
+    <p>閲覧したい与薬情報を選択してください</p><br>
+    <button type="button" onclick="p0_morning()">朝</button>
+    <p id="p0_morning">未投与です</p><br>
+    <button type="button" onclick="p0_noon()">昼</button>
+    <p id="p0_noon">未投与です</p><br>
+    <button type="button" onclick="p0_night()">夜</button>
+    <p id="p0_night">未投与です</p><br>
+    <button onclick="history.back()">戻る</button>
 </body>
 </html>
