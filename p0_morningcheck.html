@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <title>p0_morning</title>
+
+    <script>
+        $(function(){
+            $.getJSON("drugdata.json",display);
+        });
+        function display(drugdata){
+            $("#p0_name").html(drugdata[0].name);
+            $("#p0morning_dn").html(
+                drugdata[0].morning.drugname[0]+"<br>"+
+                drugdata[0].morning.drugname[1]+"<br>"+
+                drugdata[0].morning.drugname[2]+"<br>"+
+                drugdata[0].morning.drugname[3]+"<br>"+
+                drugdata[0].morning.drugname[4])
+            $("#p0morning_p").html(
+                drugdata[0].morning.drugname[0]+"："+drugdata[0].morning.purpose[0]+"<br>"+
+                drugdata[0].morning.drugname[1]+"："+drugdata[0].morning.purpose[1]+"<br>"+
+                drugdata[0].morning.drugname[2]+"："+drugdata[0].morning.purpose[2]+"<br>"+
+                drugdata[0].morning.drugname[3]+"："+drugdata[0].morning.purpose[3]+"<br>"+
+                drugdata[0].morning.drugname[4]+"："+drugdata[0].morning.purpose[4]
+            )
+            $("#p0morning_t").html(drugdata[0].morning.time)
+        }
+    </script>
+</head>
+<body>
+    
+    <form>
+    <table>
+        <caption>与薬情報</caption>
+        <tr>
+            <td colspan="2" id="p0_name"></td>
+        </tr>
+        <tr>
+            <td>処方薬</td><td>用量</td>
+        </tr>
+        <tr>
+            <td id="p0morning_dn"></td>
+            <td>
+                <input type="text" id="dd0" placeholder="用量を入力してください" inputmode="numeric" pattern="\d"><br>
+                <input type="text" id="dd1" placeholder="用量を入力してください" inputmode="numeric" pattern="\d"><br>
+                <input type="text" id="dd2" placeholder="用量を入力してください" inputmode="numeric" pattern="\d"><br>
+                <input type="text" id="dd3" placeholder="用量を入力してください" inputmode="numeric" pattern="\d"><br>
+                <input type="text" id="dd4" placeholder="用量を入力してください" inputmode="numeric" pattern="\d">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">使用目的</td>
+        </tr>
+        <tr>
+            <td colspan="2" id="p0morning_p"></td>
+        </tr>
+        <tr>
+            <td>投与時刻</td><td id="p0morning_t"></td>
+        </tr>
+    </table><br>
+    <button onclick="history.back()">戻る</button><button onclick="gocheck()">確認する</button>
+    </form>
+</body>
+</html>
