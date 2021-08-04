@@ -28,10 +28,10 @@
 
         $(function(){
             $("#check").click(function(){
-                $.getJSON("drugdata.json",check);
+                $.getJSON("drugdata.json",check1);
             });
         });
-        function check(drugdata){
+        function check1(drugdata){
             var dd0,dd1,dd2,dd3,dd4;
             dd0 = drugdata[0].morning.drugdose[0];
             dd1 = drugdata[0].morning.drugdose[1];
