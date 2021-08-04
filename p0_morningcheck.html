@@ -38,7 +38,7 @@
             DD2 = drugdata[0].morning.drugdose[2];
             DD3 = drugdata[0].morning.drugdose[3];
             DD4 = drugdata[0].morning.drugdose[4];
-            if(document.form.dd0.value==DD0 && document.form.dd1.value==DD1 && document.form.dd2.value==DD2 && document.form.dd3.value==DD3 && document.form.dd4.value==DD4){
+            if(document.form.drugdose0.value==DD0 && document.form.drugdose1.value==DD1 && document.form.drugdose2.value==DD2 && document.form.drugdose3.value==DD3 && document.form.drugdose4.value==DD4){
                 alert("正しく入力できています");
             }else{
                 alert("入力が間違っています");
@@ -58,19 +58,19 @@
             <td>処方薬</td><td>用量</td>
         </tr>
         <tr>
-            <td id="p0morning_dn0"></td><td><input type="text" id="dd0" placeholder="用量を入力してください" inputmode="numeric" pattern="\d*"></td>
+            <td id="p0morning_dn0"></td><td><input type="text" id="drugdose0" placeholder="用量を入力してください" inputmode="numeric" pattern="\d*"></td>
         </tr>
         <tr>
-            <td id="p0morning_dn1"></td><td><input type="text" id="dd1" placeholder="用量を入力してください" inputmode="numeric" pattern="\d*"></td>
+            <td id="p0morning_dn1"></td><td><input type="text" id="drugdose1" placeholder="用量を入力してください" inputmode="numeric" pattern="\d*"></td>
         </tr>
         <tr>
-            <td id="p0morning_dn2"></td><td><input type="text" id="dd2" placeholder="用量を入力してください" inputmode="numeric" pattern="\d*"></td>
+            <td id="p0morning_dn2"></td><td><input type="text" id="drugdose2" placeholder="用量を入力してください" inputmode="numeric" pattern="\d*"></td>
         </tr> 
         <tr>
-            <td id="p0morning_dn3"></td><td><input type="text" id="dd3" placeholder="用量を入力してください" inputmode="numeric" pattern="\d*"></td>
+            <td id="p0morning_dn3"></td><td><input type="text" id="drugdose3" placeholder="用量を入力してください" inputmode="numeric" pattern="\d*"></td>
         </tr>
         <tr>
-            <td id="p0morning_dn4"></td><td><input type="text" id="dd4" placeholder="用量を入力してください" inputmode="numeric" pattern="\d*"></td>
+            <td id="p0morning_dn4"></td><td><input type="text" id="drugdose4" placeholder="用量を入力してください" inputmode="numeric" pattern="\d*"></td>
         </tr>
         <tr>
             <td colspan="2">使用目的</td>
