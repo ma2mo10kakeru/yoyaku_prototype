@@ -25,6 +25,25 @@
             )
             $("#p0morning_t").html(drugdata[0].morning.time)
         }
+
+        $(function(){
+            $("check").click(function(){
+                $.getJSON("drugdata.json",check);
+            });
+        });
+        function check(drugdata){
+            var dd0,dd1,dd2,dd3,dd4;
+            dd0 = drugdata[0].morning.drugdose[0];
+            dd1 = drugdata[0].morning.drugdose[1];
+            dd2 = drugdata[0].morning.drugdose[2];
+            dd3 = drugdata[0].morning.drugdose[3];
+            dd4 = drugdata[0].morning.drugdose[4];
+            if(document.form.dd0.value==dd0 && document.form.dd1.value==dd1 && document.form.dd2.value==dd2 && document.form.dd3.value==dd3 && document.form.dd4.value==dd4){
+                alert("正しく入力できています");
+            }else{
+                alert("入力が間違っています");
+            }
+        }
     </script>
 </head>
 <body>
@@ -63,7 +82,7 @@
             <td>投与時刻</td><td id="p0morning_t"></td>
         </tr>
     </table><br>
-    <button onclick="history.back()">戻る</button><button onclick="gocheck()">確認する</button>
+    <button onclick="history.back()">戻る</button><button id="check">確認する</button>
     </form>
 </body>
 </html>
