@@ -38,7 +38,7 @@
             DD2 = drugdata[0].morning.drugdose[2];
             DD3 = drugdata[0].morning.drugdose[3];
             DD4 = drugdata[0].morning.drugdose[4];
-            if(document.form.drugdose0.value==DD0 && document.form.drugdose1.value==DD1 && document.form.drugdose2.value==DD2 && document.form.drugdose3.value==DD3 && document.form.drugdose4.value==DD4){
+            if(document.form1.drugdose0.value==DD0 && document.form1.drugdose1.value==DD1 && document.form1.drugdose2.value==DD2 && document.form1.drugdose3.value==DD3 && document.form1.drugdose4.value==DD4){
                 alert("正しく入力できています");
             }else{
                 alert("入力が間違っています");
@@ -48,7 +48,7 @@
 </head>
 <body>
     
-    <form>
+    <form name="form1">
     <table>
         <caption>与薬情報</caption>
         <tr>
