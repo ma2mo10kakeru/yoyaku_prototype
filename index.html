@@ -26,15 +26,7 @@ function display(drugdata){
 
 //画面遷移
 function patient0(){
-    $.getJSON("drugdata.json",gopatient0);
-}
-function gopatient0(drugdata){
-    var PN0=drugdata[0].name;
-    if(PN0=""){
-        alert("患者情報が登録されていません");
-    }else{
-        location.href="patient0.html";
-    }
+    location.href="patient0.html";
 }
 function patient1(){
     location.href="patient1.html";
@@ -46,15 +38,7 @@ function patient3(){
     location.href="patient3.html";
 }
 function patient4(){
-    $.getJSON("drugdata.json",gopatient4);
-}
-function gopatient4(drugdata){
-    var PN4=drugdata[4].name;
-    if(PN4=""){
-        alert("患者情報が登録されていません");
-    }else{
-        location.href="patient4.html";
-    }
+    location.href="patient4.html";
 }
 //画面遷移
 </script>
