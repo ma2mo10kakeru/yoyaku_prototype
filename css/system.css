@@ -1,5 +1,7 @@
 table{
     text-align: center;
+    border-collapse: collapse;
+    border: solid 2px rgb(52, 37, 253)
 }
 table th{
     padding: 10px;
