@@ -38,7 +38,15 @@ function gopatient3(){
     location.href="patient3.html";
 }
 function gopatient4(){
-    location.href="patient4.html";
+    $.getJSON("drugdata.json",gopatient_4);
+}
+function gopatient_4(drugdata){
+    var PN=drugdata[4].name;
+    if(PN=""){
+        alert("患者情報が登録されていません");
+    }else{
+        location.href="patient4.html";
+    }
 }
 //画面遷移
 </script>
