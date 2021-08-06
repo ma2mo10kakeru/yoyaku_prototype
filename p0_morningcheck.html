@@ -51,11 +51,14 @@
     <form name="form1">
     <table>
         <caption>与薬情報</caption>
+        <th>
+            <th colspan="2">氏名</th>
+        </th>
         <tr>
             <td colspan="2" id="p0_name"></td>
         </tr>
         <tr>
-            <td>処方薬</td><td>用量</td>
+            <th>処方薬</th><th>用量</th>
         </tr>
         <tr>
             <td id="p0morning_dn0"></td><td><input type="text" id="drugdose0" placeholder="用量を入力してください" inputmode="numeric" pattern="\d*"></td>
@@ -73,13 +76,16 @@
             <td id="p0morning_dn4"></td><td><input type="text" id="drugdose4" placeholder="用量を入力してください" inputmode="numeric" pattern="\d*"></td>
         </tr>
         <tr>
-            <td colspan="2">使用目的</td>
+            <th colspan="2">使用目的</th>
         </tr>
         <tr>
             <td colspan="2" id="p0morning_p"></td>
         </tr>
         <tr>
-            <td>投与時刻</td><td id="p0morning_t"></td>
+            <th colspan="2">投与時刻</th>
+        </tr>
+        <tr>
+            <td colspan="2" id="p0morning_t"></td>
         </tr>
         <tr>
             <td colspan="2"><input type="button" value="確認する" id="check"></td>
