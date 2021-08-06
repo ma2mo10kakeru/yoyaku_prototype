@@ -1,16 +1,15 @@
 table{
+    font-size: 30pt;
     width: 100%;
     text-align: center;
     border-collapse: collapse;
     border: solid 2px rgb(52, 37, 253)
 }
 table th{
-    font-size: 30pt;
     padding: 10px;
     color: black;
     background-color: rgb(172, 234, 255);
 }
 table td{
-    font-size: 25px;
     padding: 10px;
 }
