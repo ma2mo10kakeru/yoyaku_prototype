@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 table{
     text-align: center;
 }
@@ -7,4 +8,11 @@ table th{
 }
 table td{
     padding: 3px 10px;
+=======
+table th{
+    padding: 10px;
+}
+table td{
+    padding: 3px 10px;
+>>>>>>> 0b4fba74902363ebe03215a7ecaae4b9bbc86fa1
 }
