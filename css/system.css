@@ -1,0 +1,10 @@
+table{
+    text-align: center;
+}
+table th{
+    padding: 10px;
+    color: deepskyblue;
+}
+table td{
+    padding: 3px 10px;
+}
