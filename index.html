@@ -26,7 +26,15 @@ function display(drugdata){
 
 //画面遷移
 function patient0(){
-    location.href="patient0.html";
+    $.getJSON("drugdata.json",gopatient0);
+}
+function gopatient0(drugdata){
+    var PN=drugdata[0].name;
+    if(PN="0"){
+        alert("患者情報が登録されていません");
+    }else{
+        location.href="patient0.html";
+    }
 }
 function patient1(){
     location.href="patient1.html";
