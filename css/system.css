@@ -1,15 +1,15 @@
-table{
+table.home{
     font-size: 30pt;
     width: 100%;
     text-align: center;
     border-collapse: collapse;
     border: solid 2px rgb(52, 37, 253)
 }
-table th{
+table.home th{
     padding: 10px;
     color: black;
     background-color: rgb(172, 234, 255);
 }
-table td{
+table.home td{
     padding: 10px;
 }
