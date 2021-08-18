@@ -1,5 +1,6 @@
 /*ホーム画面リスト*/
 table{
+    table-layout: fixed;
     font-size: 30pt;
     width: 100%;
     text-align: center;
