@@ -39,9 +39,19 @@
             DD3 = drugdata[0].morning.drugdose[3];
             DD4 = drugdata[0].morning.drugdose[4];
             if(document.form1.drugdose0.value==DD0 && document.form1.drugdose1.value==DD1 && document.form1.drugdose2.value==DD2 && document.form1.drugdose3.value==DD3 && document.form1.drugdose4.value==DD4){
-                alert("正しく入力できています");
+                Right = confirm("正しく確認できています。\n患者ページでQRを読み込んでください。");
+                if(Right == true){
+                    location.href="patient0.html";
+                }else{
+                    alert("キャンセルされました。");
+                }
             }else{
-                alert("入力が間違っています");
+                Wrong = confirm("入力内容が間違っています！\n与薬情報閲覧画面から再確認してください。");
+                if(Wrong == true){
+                    location.href="p0_morning.html";
+                }else{
+                    alert("キャンセルされました。")
+                }
             }
         }
     </script>
