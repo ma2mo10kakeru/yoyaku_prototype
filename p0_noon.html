@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <title>p0_noon</title>
+
+    <script>
+        $(function(){
+            $.getJSON("drugdata.json",display);
+        });
+        function display(drugdata){
+            $("#p0_name").html(drugdata[0].name);
+            $("#p0noon_dn").html(
+                drugdata[0].noon.drugname[0]+"<br>"+
+                drugdata[0].noon.drugname[1]+"<br>"+
+                drugdata[0].noon.drugname[2]+"<br>"+
+                drugdata[0].noon.drugname[3]+"<br>"+
+                drugdata[0].noon.drugname[4])
+            $("#p0noon_dd").html(
+                drugdata[0].noon.drugdose[0]+"<br>"+
+                drugdata[0].noon.drugdose[1]+"<br>"+
+                drugdata[0].noon.drugdose[2]+"<br>"+
+                drugdata[0].noon.drugdose[3]+"<br>"+
+                drugdata[0].noon.drugdose[4]
+            )
+            $("#p0noon_p").html(
+                drugdata[0].noon.drugname[0]+"："+drugdata[0].noon.purpose[0]+"<br>"+
+                drugdata[0].noon.drugname[1]+"："+drugdata[0].noon.purpose[1]+"<br>"+
+                drugdata[0].noon.drugname[2]+"："+drugdata[0].noon.purpose[2]+"<br>"+
+                drugdata[0].noon.drugname[3]+"："+drugdata[0].noon.purpose[3]+"<br>"+
+                drugdata[0].noon.drugname[4]+"："+drugdata[0].noon.purpose[4]
+            )
+            $("#p0noon_t").html(drugdata[0].noon.time)
+        }
+
+        function gocheck(){
+            location.href="p0_nooncheck.html";
+        }
+    </script>
+</head>
+<body>
+    
+    <table id="DrugList">
+        <caption>与薬情報</caption>
+        <tr>
+            <th colspan="2">氏名</th>
+        </tr>
+        <tr>
+            <td colspan="2" id="p0_name"></td>
+        </tr>
+        <tr>
+            <th>処方薬</th><th>用量</th>
+        </tr>
+        <tr>
+            <td id="p0noon_dn"></td><td id="p0noon_dd"></td>
+        </tr>
+        <tr>
+            <th colspan="2">使用目的</th>
+        </tr>
+        <tr>
+            <td colspan="2" id="p0noon_p"></td>
+        </tr>
+        <tr>
+            <th colspan="2">投与時刻</th>
+        </tr>
+        <tr>
+            <td colspan="2" id="p0noon_t"></td>
+        </tr>
+    </table><br>
+    <button onclick="history.back()">戻る</button><button onclick="gocheck()">確認する</button>
+</body>
+</html>
