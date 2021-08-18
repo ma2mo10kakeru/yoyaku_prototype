@@ -16,23 +16,6 @@ table.home td{
 }
 /*ホーム画面リスト*/
 
-/*与薬リスト*/
-table.DrugList{
-    font-size: 30pt;
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
-    border: solid 2px rgb(52, 37, 253)
-}
-table.DrugList th{
-    padding: 10px;
-    color: black;
-    background-color: rgb(172, 234, 255);
-}
-table.DrugList td{
-    padding: 10px;
-}
-/*与薬リスト*/
 
 /*ホーム波面ボタン*/
 section {
