@@ -111,6 +111,7 @@ p.title{
 }
 header {
     background-color: lightpink;
+    height: 50px;
 }
 .main {
     padding-bottom: 150px;
