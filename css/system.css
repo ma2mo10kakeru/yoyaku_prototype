@@ -143,9 +143,8 @@ header {
     padding-bottom: 150px;
 }
 footer {
-    background-color: lightblue;
     width: 100%;
-    height: 150px;
+    height: 50px;
     position: absolute;
     bottom: 0;
 }
