@@ -4,30 +4,45 @@
     <meta charset="UTF-8">
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <title>patient0</title>
+    <link rel="stylesheet" href="./css/system.css" />
 
-    <script type="text/javascript">
-    function p0_morning(){
-        location.href="p0_morning.html"
-    };
-    function p0_noon(){
-        location.href="p0_noon.html"
-    };
-    function p0_night(){
-        location.href="p0_night.html"
-    };
-    function pageback(){
-        location.href="index.html";
-    }
-    </script>
+<script type="text/javascript">
+ $(function(){
+    $.getJSON("drugdata.json",display);
+　});
+function display(drugdata){
+    $("#p0_name").html(drugdata[0].name);
+};
+</script>
 </head>
+
 <body>
-    <p>閲覧したい与薬情報を選択してください</p><br>
-    <button type="button" onclick="p0_morning()">朝</button>
-    <p id="p0_morning">未投与です</p><br>
-    <button type="button" onclick="p0_noon()">昼</button>
-    <p id="p0_noon">未投与です</p><br>
-    <button type="button" onclick="p0_night()">夜</button>
-    <p id="p0_night">未投与です</p><br>
+
+    <table border="1">
+        <caption>患者情報</caption>
+        <tr>
+            <th colspan="2">氏名</th>
+        </tr>
+        <tr>
+            <td colspan="2" id="p0_name"></td>
+        </tr>
+        <tr>
+            <th>投与時間</th><th>ステータス</th>
+        </tr>
+        <tr>
+            <td><a href="p0_morning.html" class="btn_home">朝</a></td><td id="status_morning">未投与</td>
+        </tr>
+        <tr>
+            <td><a href="p0_noon.html" class="btn_home">昼</a></td><td id="status_noon">未投与</td>
+        </tr>
+        <tr>
+            <td><a href="p0_night.html" class="btn_home">夜</a></td><td id="status_night">未投与</td>
+        </tr>
+    </table>
+
+    <footer>
     <button onclick="pageback()">戻る</button>
+    </footer>
+
 </body>
 </html>
