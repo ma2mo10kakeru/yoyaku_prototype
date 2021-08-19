@@ -13,11 +13,14 @@
 function display(drugdata){
     $("#p0_name").html(drugdata[0].name);
 };
+function pageback(){
+    location.href="index.html";
+}
 </script>
 </head>
 
 <body>
-
+    <div>
     <table border="1">
         <caption>患者情報</caption>
         <tr>
@@ -39,6 +42,10 @@ function display(drugdata){
             <td><a href="p0_night.html" class="btn_home">夜</a></td><td id="status_night">未投与</td>
         </tr>
     </table>
+    </div>
+    <div>
+        
+    </div>
 
     <footer>
     <button onclick="pageback()">戻る</button>
