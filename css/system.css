@@ -93,3 +93,27 @@ input[type="text"]{
     padding: 1px;
     font-size: 30px;
 }
+
+
+html ,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container {
+    position: relative;
+    min-height: 100%;
+}
+header {
+    background-color: lightpink;
+}
+.main {
+    padding-bottom: 150px;
+}
+footer {
+    background-color: lightblue;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+}
