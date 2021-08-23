@@ -117,7 +117,8 @@ section {
   }
 
   .btn-stitch {
-    font-size: 30px;
+    margin: 5px;
+    font-size: 20px;
     text-align: left;
     padding: 10px;
     display: inline-block;
