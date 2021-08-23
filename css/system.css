@@ -5,7 +5,7 @@ table{
     width: 100%;
     text-align: center;
     border-collapse: collapse;
-    border: solid 2px rgb(52, 37, 253)
+    border: solid 2px #668ad8;
 }
 table th{
     padding: 10px;
