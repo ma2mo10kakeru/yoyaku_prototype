@@ -139,6 +139,14 @@ input[type="text"]{
 }
 /*テキストフィールド*/
 
+/*再確認ボタン*/
+input[type="button"]{
+  border: 1px;
+  border-radius: 0.3em;
+  font-size: 20px;
+}
+/*再確認ボタン*/
+
 /*画面構成*/
 html ,body {
     margin: 0;
