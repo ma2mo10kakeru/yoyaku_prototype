@@ -3,7 +3,7 @@ table{
     margin: 5px;
     table-layout: fixed;
     font-size: 30pt;
-    width: 100%;
+    width: 95%;
     text-align: center;
     border-collapse: collapse;
     border: solid 2px #668ad8;
@@ -156,7 +156,7 @@ html ,body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: rgb(243, 227, 245);
+    background-color: rgb(245, 235, 247);
 }
 p.title{
     font-size: 30px;
@@ -179,6 +179,6 @@ footer {
     height: 80px;
     position: absolute;
     bottom: 0;
-    background-color: rgb(243, 227, 245);
+    background-color: rgb(245, 235, 247);
 }
 /*画面構成*/
