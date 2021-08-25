@@ -1,5 +1,6 @@
 /*リスト*/
 table{
+    margin: 5px;
     table-layout: fixed;
     font-size: 30pt;
     width: 100%;
@@ -155,7 +156,7 @@ html ,body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: rgb(245, 221, 247);
+    background-color: rgb(243, 227, 245);
 }
 p.title{
     font-size: 30px;
@@ -178,6 +179,6 @@ footer {
     height: 80px;
     position: absolute;
     bottom: 0;
-    background-color: rgb(245, 221, 247);
+    background-color: rgb(243, 227, 245);
 }
 /*画面構成*/
